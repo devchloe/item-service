@@ -25,7 +25,7 @@ public class ItemController {
     @GetMapping("/")
     public Collection<Item> items() throws InterruptedException {
         log.info("Received request /items..");
-        Thread.sleep(10000000);
+//        Thread.sleep(1000000);
         return itemService.getAllItems();
     }
 

@@ -3,7 +3,7 @@ spring:
     name: items
 
 server:
-  port: ${items.port:8071}
+  port: ${item.port:8071}
 
 eureka:
   client:
@@ -12,7 +12,3 @@ eureka:
   instance:
     hostname: eureka02
     instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
-
-management:
-  security:
-    enabled: false
